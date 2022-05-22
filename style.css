@@ -1,0 +1,57 @@
+html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    border-bottom: 2px solid black;
+}
+
+.container {
+    flex-grow: 1;
+    margin: 10vh;
+}
+
+.add-book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 25vh;
+    border: 2px solid rgb(171, 171, 241);
+    border-radius: 10px;
+    font-size: 15vh;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.add-book p {
+    transition: .5s;
+}
+
+.add-book:hover {
+    transform: scale(1.1);
+}
+
+.add-book:hover  p{
+    transform: rotate(90deg);
+}
+
+.footer {
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
