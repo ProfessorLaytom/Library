@@ -6,20 +6,50 @@
     <meta name="viewport" content="width=device-width,
     initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Library</title>
 </head>
 <body>
-    <div class="header">
-        <h1>Library</h1>
-    </div>
-    <div class="container">
-        <div class="add-book">
-            <p>+</p>
+    <section class="main-container">
+        <div class="header">
+            <h1>Library</h1>
         </div>
-    </div>
+        <div class="container">
+            <div class="add-book">
+                <p>+</p>
+            </div>
+        </div>
+    </section>
+    <section class="form" style="display:none;">
+        <form>
+            <img src="close.svg" alt="close popup" class="close-popup">
+            <label for="author">
+                Author name
+                <input type="text" id="author">
+            </label>
+            <label for="book-name">
+                Book name
+                <input type="text" id="book-name">
+            </label>
+            <label for="total-pages">
+                Total number of pages 
+                <input type="tel" id="total-pages" pattern="[0-9]">
+            </label>
+            <label for="completed-pages">
+                Number of completed pages
+                <input type="tel" id="completed-pages">
+            </label>
+            <div class="is-book-finished">
+                <p>Book finished ?</p>
+                <input type="checkbox" id="completed">
+                <label for="completed"></label>
+            </div>
+            <input type="button" value="Add me !">
+        </form>
+    </section>
     <div class="footer">
         By Tom Dangleterre
     </div>
 </body>
+
 </html>
