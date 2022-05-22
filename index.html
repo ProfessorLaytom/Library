@@ -21,30 +21,28 @@
         </div>
     </section>
     <section class="form" style="display:none;">
-        <form>
+        <form id="to-reset">
             <img src="close.svg" alt="close popup" class="close-popup">
             <label for="author">
                 Author name
-                <input type="text" id="author">
+                <input type="text" id="author" placeholder="Melon J. Tude" value="">
             </label>
             <label for="book-name">
                 Book name
-                <input type="text" id="book-name">
+                <input type="text" id="book-name"
+                placeholder="tale of a Melon" value="">
             </label>
             <label for="total-pages">
                 Total number of pages 
-                <input type="tel" id="total-pages" pattern="[0-9]">
-            </label>
-            <label for="completed-pages">
-                Number of completed pages
-                <input type="tel" id="completed-pages">
+                <input type="tel" id="total-pages"
+                pattern="[0-9]" placeholder="666" value="">
             </label>
             <div class="is-book-finished">
                 <p>Book finished ?</p>
-                <input type="checkbox" id="completed">
+                <input type="checkbox" id="completed" value="off">
                 <label for="completed"></label>
             </div>
-            <input type="button" value="Add me !">
+            <input type="button" value="Add me !" class="add-me">
         </form>
     </section>
     <div class="footer">

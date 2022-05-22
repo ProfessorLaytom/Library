@@ -8,7 +8,9 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    font-family: sans-serif;
     --border-color : rgb(171, 171, 241);
+    background-color: rgb(255, 249, 242);
 }
 
 .header {
@@ -16,25 +18,31 @@ body {
     justify-content: center;
     align-items: center;
     height: 10vh;
-    border-bottom: 2px solid black;
+    box-shadow : 0px 0px 16px 5px rgba(0,0,0,0.39);
 }
 
 .container {
+    align-self: center;
     flex-grow: 1;
-    margin: 10vh;
+    padding: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+    width: 85vw;
 }
 
 .add-book {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh;
-    width: 25vh;
+    height: 40vh;
+    width: 30vh;
     border: 2px solid var(--border-color);
     border-radius: 10px;
     font-size: 15vh;
     transition: .5s;
     cursor: pointer;
+    background-color: aliceblue;
 }
 
 .add-book p {
@@ -49,13 +57,55 @@ body {
     transform: rotate(90deg);
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40vh;
+    width: 30vh;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;   
+    background-color: aliceblue;
+}
+.card h2, .card p {
+    margin : 0 0 0 2vh
+}
+
+.complete {
+    width: 3em;
+    align-self: center;
+    cursor: pointer;
+    transition: .4s;
+    position: relative; 
+ }
+
+ .complete:hover {
+     transform: scale(1.2);
+ }
+
+ .remove-btn {
+    align-self: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    transition: .4s;
+    background-color: aliceblue;
+ }
+
+ .remove-btn:hover {
+     transform: scale(1.1);
+     cursor: pointer;
+ }
+
 .close-popup{
+    align-self: flex-end;
+    width: 1em;
     cursor: pointer;
     transition: .4s;
 }
 
 .close-popup:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 
 .form {
@@ -70,11 +120,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.close-popup {
-    align-self: flex-end;
-    width: 1em;
 }
 
 .form form {
